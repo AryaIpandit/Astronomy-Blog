@@ -31,6 +31,11 @@
 	font-style: normal;
 	font-display: swap;
 
+html, body {
+  max-width: 100%;
+  overflow-x: hidden;
+}
+
 #icon {
   transition: color 1s ease;
 }
