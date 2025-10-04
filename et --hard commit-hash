@@ -1,0 +1,41 @@
+[33mcommit 6bfa65eb3feb9639c45cba3b5e4932cbba28ab3d[m[33m ([m[1;36mHEAD[m[33m -> [m[1;32mmain[m[33m, [m[1;31morigin/main[m[33m)[m
+Author: Arya Pandit <arya.i.pandit@gmail.com>
+Date:   Sat Oct 4 19:57:04 2025 +0530
+
+    Horizontal Cut Fix 3
+
+[33mcommit 4ce5a96b165b0edd3fb1ec1a5838155bf2d20c7b[m
+Author: Arya Pandit <arya.i.pandit@gmail.com>
+Date:   Sat Oct 4 19:53:20 2025 +0530
+
+    Horizontal Cut Fix 2
+
+[33mcommit de8cb7faae9b21c97d0c99af7de84529c0f1c01d[m
+Author: Arya Pandit <arya.i.pandit@gmail.com>
+Date:   Sat Oct 4 19:51:21 2025 +0530
+
+    Horizontal Scroll Cut Fix
+
+[33mcommit d94dcc3de0e0cf65797c0ae6899acbf8f828505c[m
+Author: Arya Pandit <arya.i.pandit@gmail.com>
+Date:   Sat Oct 4 19:44:11 2025 +0530
+
+    Horizontal Scrool Fix
+
+[33mcommit 93c03896ed94a1d95e4776cc3f0cf0f5e59bcaa9[m
+Author: Arya Pandit <arya.i.pandit@gmail.com>
+Date:   Sat Oct 4 19:40:38 2025 +0530
+
+    Add PNG favicon fallback for mobile
+
+[33mcommit 77c814407c9e932314c4293fd680614575a23b50[m
+Author: Arya Pandit <arya.i.pandit@gmail.com>
+Date:   Sat Oct 4 19:20:16 2025 +0530
+
+    Add minimal theme toggle and dark mode header styling
+
+[33mcommit 53047bbfad1aba17a47ebaa129d72e2386763fab[m
+Author: Arya Pandit <arya.i.pandit@gmail.com>
+Date:   Sat Oct 4 15:08:43 2025 +0530
+
+    Initial commit
