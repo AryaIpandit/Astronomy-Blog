@@ -20,7 +20,17 @@ const { title, description, image = FallbackImage } = Astro.props;
 <!-- Global Metadata -->
 <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width,initial-scale=1" />
-<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+<link rel="icon" type="image/svg+xml" href="GG.svg" />
+
+<!-- SVG favicon (modern browsers) -->
+<link rel="icon" type="image/svg+xml" href="GG.svg" />
+
+<!-- PNG fallback (for Safari and older browsers) -->
+<link rel="icon" type="image/png" href="GG.png" sizes="32x32" />
+
+<!-- Apple Touch Icon (for iOS home screen) -->
+<link rel="apple-touch-icon" href="GG.png" />
+
 <link rel="sitemap" href="/sitemap-index.xml" />
 <link
 	rel="alternate"
