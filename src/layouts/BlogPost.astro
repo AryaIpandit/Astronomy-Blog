@@ -29,6 +29,48 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 				max-width: 100%;
 				margin: 0;
 			}
+
+			#nova-loader {
+  				position: fixed;
+  				top: 0;
+  				left: 0;
+  				width: 100%;
+  				height: 100%;
+  				background: black; /* matches dark theme */
+  				display: flex;
+  				align-items: center;
+  				justify-content: center;
+  				z-index: 9999; /* above everything */
+			}
+
+			.nova-core {
+  				width: 40px;
+  				height: 40px;
+  				border-radius: 50%;
+  				background: radial-gradient(circle at center, #8a2be2, #4b0082);
+  				box-shadow: 0 0 20px #8a2be2, 0 0 40px #00ffff;
+  				animation: pulse 1.5s infinite ease-in-out;
+			}
+
+			.nova-trail {
+  				position: absolute;
+ 				width: 80px;
+  				height: 80px;
+  				border: 2px dashed rgba(138, 43, 226, 0.5);
+  				border-radius: 50%;
+  				animation: orbit 2s linear infinite;
+			}
+
+			@keyframes pulse {
+  				0%, 100% { transform: scale(1); opacity: 1; }
+  				50% { transform: scale(1.3); opacity: 0.7; }
+			}
+
+			@keyframes orbit {
+  				0% { transform: rotate(0deg); }
+  				100% { transform: rotate(360deg); }
+			}
+
 			.hero-image {
 				width: 100%;
 			}
@@ -65,6 +107,20 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 	</head>
 
 	<body>
+		<div id="nova-loader">
+  			<div class="nova-core"></div>
+  			<div class="nova-trail"></div>
+		</div>
+		<script>
+  			window.addEventListener("load", () => {
+    			const loader = document.getElementById("nova-loader");
+    			if (loader) {
+      				loader.style.opacity = "0";
+      				loader.style.transition = "opacity 0.5s ease";
+      				setTimeout(() => loader.remove(), 500);
+    			}
+  			});
+		</script>
 		<Header />
 		<ThemeToggle />
 		<main>

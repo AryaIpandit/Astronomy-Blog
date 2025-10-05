@@ -1,17 +1,12 @@
 ---
 interface Props {
-	date: Date;
+  date?: Date
 }
 
 const { date } = Astro.props;
+const safeDate = date ?? new Date(); // fallback to current date
 ---
 
-<time datetime={date.toISOString()}>
-	{
-		date.toLocaleDateString('en-uk', {
-			year: 'numeric',
-			month: 'short',
-			day: 'numeric',
-		})
-	}
+<time datetime={safeDate.toISOString()}>
+  { safeDate.toLocaleDateString("en-uk") }
 </time>
