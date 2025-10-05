@@ -4,11 +4,11 @@ import moonIcon from '../icons/moon.svg';
 ---
 
 <button id="theme-toggle" aria-label="Toggle Theme" style="background: none; border: none; cursor: pointer;">
-  <div id="theme-icon" innerHTML={moonIcon} />
+  <div id="theme-icon"></div>
 </button>
 
 <script is:client>
-  const sun = `<?xml version="1.0" encoding="UTF-8"?>
+  const sun = `
     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <circle cx="12" cy="12" r="5"/>
       <line x1="12" y1="1" x2="12" y2="3"/>
@@ -21,7 +21,7 @@ import moonIcon from '../icons/moon.svg';
       <line x1="18.36" y1="5.64" x2="19.78" y2="4.22"/>
     </svg>`;
 
-  const moon = `<?xml version="1.0" encoding="UTF-8"?>
+  const moon = `
     <svg viewBox="0 0 24 24" width="24" height="24" fill="none" stroke="black" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
       <path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/>
     </svg>`;
@@ -33,20 +33,22 @@ import moonIcon from '../icons/moon.svg';
     }
   }
 
+  function applyTheme(theme) {
+    document.documentElement.setAttribute('data-theme', theme);
+    setThemeIcon(theme);
+  }
+
   function toggleTheme() {
     const current = document.documentElement.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
-    setThemeIcon(next);
+    applyTheme(next);
   }
 
   window.addEventListener('DOMContentLoaded', () => {
     const saved = localStorage.getItem('theme');
-    const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = saved || 'dark';
-    document.documentElement.setAttribute('data-theme', theme);
-    setThemeIcon(theme);
+    const theme = saved || 'dark'; // force default to dark
+    applyTheme(theme);
 
     const button = document.getElementById('theme-toggle');
     if (button) {
