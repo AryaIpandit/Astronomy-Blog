@@ -14,6 +14,14 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 
 <html lang="en">
 	<head>
+		<script>
+    		(function() {
+      			const saved = localStorage.getItem('theme');
+      			const theme = saved || 'dark';
+      			document.documentElement.setAttribute('data-theme', theme);
+    		})();
+  		</script>
+
 		<BaseHead title={title} description={description} />
 		<style>
 			main {
