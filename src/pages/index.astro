@@ -27,7 +27,9 @@ import { SITE_DESCRIPTION } from '../consts';
 	</div>
     <Header />
     <main>
-      <h1>🧑‍🚀 Hello, Astronaut!</h1>
+		<div class="quote-container">
+  			<p id="quote-box" class="cosmic-quote"></p>
+		</div>
       <p>
         Welcome to the official <a href="https://astro.build/">Astro</a> blog starter template.
         This template serves as a lightweight, minimally-styled starting point for anyone looking to build
@@ -59,6 +61,38 @@ import { SITE_DESCRIPTION } from '../consts';
       </p>
     </main>
     <Footer />
+	<script>
+  		const quotes = [
+    		{ text: "Somewhere, something incredible is waiting to be known.", author: "Carl Sagan" },
+  			{ text: "The cosmos is within us. We are made of star-stuff.", author: "Carl Sagan" },
+  			{ text: "To confine our attention to terrestrial matters would be to limit the human spirit.", author: "Stephen Hawking" },
+			{ text: "The most incomprehensible thing about the universe is that it is comprehensible.", author: "Albert Einstein" },
+			{ text: "Not only is the Universe stranger than we think, it is stranger than we can think.", author: "Werner Heisenberg" },
+			{ text: "The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever.", author: "Konstantin Tsiolkovsky" },
+			{ text: "The universe is under no obligation to make sense to you.", author: "Neil deGrasse Tyson" },
+			{ text: "The universe is filled with magical things patiently waiting for our wits to grow sharper.", author: "Eden Phillpotts" }
+  		];
+
+  		let index = 0;
+  		const box = document.getElementById("quote-box");
+
+		function showQuote() {
+    		box.style.opacity = 0;
+    		setTimeout(() => {
+      			box.innerHTML = `
+      				<span class="quote-text">“${quotes[index].text}”</span><br />
+      				<span class="quote-author">— ${quotes[index].author}</span>
+    			`;
+      			box.style.opacity = 1;
+      			index = (index + 1) % quotes.length;
+    		}, 800);
+  		}
+
+		showQuote();
+		setInterval(showQuote, 6000);
+	</script>
+
+	</script>
   </body>
   <style>
   	#nova-loader {
@@ -101,5 +135,23 @@ import { SITE_DESCRIPTION } from '../consts';
     	0% { transform: rotate(0deg); }
     	100% { transform: rotate(360deg); }
   	}
+
+	.quote-container {
+  		background: linear-gradient(to right, #1a1a40, #000);
+  		padding: 0.5em;
+  		border-radius: 8px;
+  		text-align: center;
+  		max-width: 700px;
+  		margin: 1em auto;
+		box-shadow: 0 0 10px #8a2be2;
+	}
+
+	.cosmic-quote {
+  		font-size: 1.5rem;
+  		font-style: italic;
+  		color: #eee;
+  		opacity: 1;
+  		transition: opacity 0.8s ease-in-out;
+	}
 	</style>
 </html>
