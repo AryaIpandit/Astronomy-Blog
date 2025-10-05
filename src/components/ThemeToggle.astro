@@ -36,7 +36,7 @@ import moonIcon from '../icons/moon.svg';
   function toggleTheme() {
     const current = document.documentElement.getAttribute('data-theme');
     const next = current === 'dark' ? 'light' : 'dark';
-    document.documentElement.setAttribute('data-theme', 'dark');
+    document.documentElement.setAttribute('data-theme', next);
     localStorage.setItem('theme', next);
     setThemeIcon(next);
   }
@@ -44,7 +44,7 @@ import moonIcon from '../icons/moon.svg';
   window.addEventListener('DOMContentLoaded', () => {
     const saved = localStorage.getItem('theme');
     const prefersDark = window.matchMedia('(prefers-color-scheme: dark)').matches;
-    const theme = saved || (prefersDark ? 'dark' : 'light');
+    const theme = saved || 'dark';
     document.documentElement.setAttribute('data-theme', theme);
     setThemeIcon(theme);
 
