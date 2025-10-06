@@ -3,6 +3,7 @@ import BaseHead from '../components/BaseHead.astro';
 import Header from '../components/Header.astro';
 import Footer from '../components/Footer.astro';
 import { SITE_DESCRIPTION } from '../consts';
+import RecentPosts from '../components/RecentPosts.astro';
 ---
 
 <!doctype html>
@@ -30,6 +31,9 @@ import { SITE_DESCRIPTION } from '../consts';
 		<div class="quote-container">
   			<p id="quote-box" class="cosmic-quote"></p>
 		</div>
+
+		<RecentPosts />
+
 		<section class="nova-section">
   			<h2>Meet Nova the Neutrino</h2>
   			<p>
