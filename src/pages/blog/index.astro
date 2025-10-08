@@ -76,8 +76,19 @@ const posts = (await getCollection('blog')).sort(
 				margin-bottom: 1rem;
 				text-align: center;
 			}
-			ul li:first-child img {
-				width: 100%;
+			ul li:first-child .nova-post-img {
+  				width: 100%;
+  				max-width: 720px;
+  				height: auto;
+  				display: block;
+  				margin: 0 auto;
+			}
+			.nova-info-icon {
+  				width: 27px;
+  				height: auto;
+  				cursor: pointer;
+  				z-index: 10;
+  				display: block;
 			}
 			ul li:first-child .title {
 				font-size: 2.369rem;
@@ -120,6 +131,110 @@ const posts = (await getCollection('blog')).sort(
 					font-size: 1.563em;
 				}
 			}
+			.nova-post-card {
+  				position: relative;
+  				background: linear-gradient(to bottom right, #1a1a40, #000);
+  				border: 1px solid #00ffff;
+  				border-left: 4px solid #8a2be2;
+  				border-radius: 8px;
+  				padding: 1em;
+  				box-shadow: 0 0 12px #4b0082;
+			}
+
+			.nova-info-wrapper {
+  				position: relative;
+  				margin-top: 1em;
+			}
+
+			.nova-info-button {
+  				position: relative;
+  				display: inline-block;
+			}
+
+			.nova-info-icon {
+  				width: 27px;
+  				height: auto;
+  				cursor: pointer;
+  				z-index: 10;
+			}
+
+			nova-info-icon:hover {
+  				transform: scale(1.1);
+			}
+
+			.nova-info-box {
+  				display: none;
+  				position: absolute;
+  				top: 0px;
+  				left: 40px;
+  				background: #1a1a40;
+  				color: #00ffff;
+  				padding: 0.6em 1em;
+  				border-radius: 8px;
+  				box-shadow: 0 0 10px #4b0082;
+  				max-width: 250px;
+  				min-width: 180px;
+  				white-space: normal;
+  				z-index: 10;
+  				font-size: 0.9rem;
+  				line-height: 1.4;
+			}
+
+			.nova-info-button:hover .nova-info-box {
+  				display: block;
+			}
+
+			@keyframes novaRipple {
+  				0% {
+    				transform: translate(-50%, -50%) scale(1);
+    				opacity: 0.8;
+  				}
+  				100% {
+    				transform: translate(-50%, -50%) scale(2.5);
+    				opacity: 0;
+  				}
+			}
+			.nova-date-row {
+  				display: flex;
+  				align-items: center;
+  				justify-content: space-between;
+  				margin-top: 0.5em;
+			}
+			.first-post .nova-info-icon {
+  				width: 36px;
+			}
+			.first-post .nova-icon-wrapper {
+  				margin-right: 23rem;
+			}
+			.first-post .nova-post-date {
+  				margin-left: 23rem;
+			}
+			.nova-icon-wrapper {
+  				position: relative;
+  				display: inline-block;
+			}
+			.nova-icon-wrapper.ripple-active::before,
+			.nova-icon-wrapper.ripple-active::after {
+  				content: "";
+  				position: absolute;
+  				top: 50%;
+  				left: 50%;
+  				width: 24px;
+  				height: 24px;
+  				border: 2px solid #00ffff;
+  				border-radius: 50%;
+  				transform: translate(-50%, -50%);
+  				z-index: 1;
+  				opacity: 0;
+  				animation: novaRipple 2s infinite ease-out;
+			}
+			.nova-icon-wrapper.ripple-active::after {
+  				animation-delay: 1s;
+			}
+			.nova-icon-wrapper.ripple-active:hover::before,
+			.nova-icon-wrapper.ripple-active:hover::after {
+  				display: none;
+			}
 		</style>
 	</head>
 	  <script>
@@ -132,6 +247,13 @@ const posts = (await getCollection('blog')).sort(
     		}
   		});
   	  </script>
+	  <script>
+  		document.querySelectorAll('.nova-icon-wrapper').forEach(wrapper => {
+    		wrapper.addEventListener('mouseenter', () => {
+      			wrapper.classList.remove('ripple-active');
+    		}, { once: true });
+  		});
+	  </script>
 	<body>
 		<div id="nova-loader">
   			<div class="nova-core"></div>
@@ -142,18 +264,34 @@ const posts = (await getCollection('blog')).sort(
 			<section>
 				<ul>
 					{
-						posts.map((post) => (
-							<li>
-								<a href={`/blog/${post.id}/`}>
-									{post.data.heroImage && (
-										<Image width={720} height={360} src={post.data.heroImage} alt="" />
-									)}
-									<h4 class="title">{post.data.title}</h4>
-									<p class="date">
-										<FormattedDate date={post.data.pubDate} />
-									</p>
-								</a>
-							</li>
+						posts.map((post, index) => (
+							<li class={`nova-post-card ${index === 0 ? 'first-post' : ''}`}>
+  								<a href={`/blog/${post.slug}/`}>
+    								{post.data.image && (
+      									<img
+        									src={post.data.image}
+        									alt={post.data.title}
+        									width="720"
+        									height="360"
+        									class="nova-post-img"
+        									style="border-radius:12px; margin-bottom:0.5rem;"
+      									/>
+    								)}
+    								<h4 class="title nova-post-title">{post.data.title}</h4>
+									<div class="nova-date-row">
+    									<p class="date nova-post-date">
+      										<FormattedDate date={post.data.pubDate} />
+    									</p>
+  								</a>
+  										<div class="nova-info-button">
+    										<div class="nova-info-wrapper">
+												<div class="nova-icon-wrapper ripple-active">
+      												<img src="/Nova.png" alt="More info" class="nova-info-icon" />
+												</div>
+      											<div class="nova-info-box">{post.data.description}</div>
+    										</div>
+  										</div>
+									</li>
 						))
 					}
 				</ul>
