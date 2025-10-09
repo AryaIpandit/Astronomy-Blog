@@ -175,7 +175,8 @@ const posts = (await getCollection('blog')).sort(
   				display: none;
   				position: absolute;
   				top: 0px;
-  				left: 40px;
+  				right: 40px;
+				left: auto;
   				background: #1a1a40;
   				color: #00ffff;
   				padding: 0.6em 1em;
@@ -292,15 +293,16 @@ const posts = (await getCollection('blog')).sort(
       										<FormattedDate date={post.data.pubDate} />
     									</p>
   								</a>
-  										<div class="nova-info-button">
-    										<div class="nova-info-wrapper">
-												<div class="nova-icon-wrapper ripple-active">
-      												<img src="/Nova.png" alt="More info" class="nova-info-icon" />
-												</div>
-      											<div class="nova-info-box">{post.data.description}</div>
-    										</div>
-  										</div>
-									</li>
+
+  								<div class="nova-info-button">
+    								<div class="nova-info-wrapper">
+										<div class="nova-icon-wrapper ripple-active">
+      										<img src="/Nova.png" alt="More info" class="nova-info-icon" />
+										</div>
+      									<div class="nova-info-box">{post.data.description}</div>
+    								</div>
+  								</div>
+							</li>
 						))
 					}
 				</ul>
