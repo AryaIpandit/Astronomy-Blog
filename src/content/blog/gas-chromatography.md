@@ -7,8 +7,6 @@ image: '/BlogImages/Gas-Chromatography/gas-chromatography.png'
 
 ![Main](/BlogImages/Gas-Chromatography/gas-chromatography.png)
 
-# Gas Chromatography: Racing Molecules to the Finish Line
-
 When chemists first began trying to separate mixtures in the early 20th century, they relied on liquid chromatography — a method that worked, but was slow and limited. Then came the idea of using a **gas** as the carrier instead of a liquid. Suddenly, volatile compounds could be separated with incredible speed and precision. That innovation gave us **Gas Chromatography (GC)**, a technique that has since become a cornerstone of modern analytical science.
 
 At its heart, GC is about giving molecules a racetrack. Each compound in a mixture runs at its own pace, depending on its volatility and how it interacts with the column. By the time they cross the finish line, you know not just _who they are_ but also _how much of each_ was present.
