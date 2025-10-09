@@ -18,7 +18,11 @@ const posts = (await getCollection('blog')).sort(
 		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
 		<style>
 			main {
-				width: 960px;
+  				max-width: 960px;
+  				width: 100%;
+  				margin: 0 auto;
+  				padding: 0 1rem;
+  				box-sizing: border-box;
 			}
 			#nova-loader {
     			position: fixed;
@@ -130,6 +134,11 @@ const posts = (await getCollection('blog')).sort(
 				ul li:first-child .title {
 					font-size: 1.563em;
 				}
+				.first-post .nova-icon-wrapper,
+  				.first-post .nova-post-date {
+    				margin: 0;
+    				text-align: center;
+  				}
 			}
 			.nova-post-card {
   				position: relative;
@@ -204,10 +213,10 @@ const posts = (await getCollection('blog')).sort(
   				width: 36px;
 			}
 			.first-post .nova-icon-wrapper {
-  				margin-right: 23rem;
+  				margin-right: clamp(2rem, 10vw, 12rem);
 			}
 			.first-post .nova-post-date {
-  				margin-left: 23rem;
+  				margin-left: clamp(2rem, 10vw, 12rem);
 			}
 			.nova-icon-wrapper {
   				position: relative;
