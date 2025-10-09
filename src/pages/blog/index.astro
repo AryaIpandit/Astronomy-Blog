@@ -245,6 +245,9 @@ const posts = (await getCollection('blog')).sort(
 			.nova-icon-wrapper.ripple-active:hover::after {
   				display: none;
 			}
+			.nova-icon-wrapper.show-description .nova-info-box {
+  				display: block;
+			}
 		</style>
 	</head>
 	  <script>
@@ -264,6 +267,15 @@ const posts = (await getCollection('blog')).sort(
     		}, { once: true });
   		});
 	  </script>
+	  <script>
+  		document.querySelectorAll('.nova-icon-wrapper').forEach(wrapper => {
+    		wrapper.addEventListener('click', (e) => {
+      			e.stopPropagation(); // prevent bubbling
+      			e.preventDefault();  // prevent accidental navigation
+      			wrapper.classList.toggle('show-description');
+    		});
+  		});
+</script>
 	<body>
 		<div id="nova-loader">
   			<div class="nova-core"></div>
