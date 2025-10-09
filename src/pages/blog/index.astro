@@ -140,6 +140,19 @@ const posts = (await getCollection('blog')).sort(
     				text-align: center;
   				}
 			}
+			.first-post a {
+  				pointer-events: auto;
+			}
+			
+			.first-post .nova-icon-wrapper {
+  				pointer-events: auto;
+  				z-index: 20;
+  				position: relative;
+			}
+			.first-post .nova-post-content {
+  				position: relative;
+  				z-index: 1;
+			}
 			.nova-post-card {
   				position: relative;
   				background: linear-gradient(to bottom right, #1a1a40, #000);
@@ -300,11 +313,11 @@ const posts = (await getCollection('blog')).sort(
       									/>
     								)}
     								<h4 class="title nova-post-title">{post.data.title}</h4>
+								</a>
 									<div class="nova-date-row">
     									<p class="date nova-post-date">
       										<FormattedDate date={post.data.pubDate} />
     									</p>
-  								</a>
 
   								<div class="nova-info-button">
     								<div class="nova-info-wrapper">
