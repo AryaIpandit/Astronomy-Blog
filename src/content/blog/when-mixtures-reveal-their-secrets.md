@@ -1,6 +1,6 @@
 ---
 title: 'When Mixtures Reveal Their Secrets'
-description: 'Gas Chromatography is one of the most powerful tools in analytical science — a technique that separates invisible mixtures into clear, identifiable peaks. This post walks you through the anatomy of a gas chromatograph, the principle behind separation, the detectors that reveal each compound, and the wide range of applications — from environmental monitoring to Mars exploration. Whether you’re curious about how scientists track pollutants, test food purity or search for biosignatures on other planets, this guide makes the science of GC both accessible and engaging.'
+description: 'How do scientists take something as ordinary as dust or air and uncover hidden stories about planets and life? The secret is a molecular race, where each compound crosses the finish line at its own time — and those tiny differences reveal entire worlds.'
 pubDate: '10 Oct, 2025'
 image: '/BlogImages/Gas-Chromatography/gas-chromatography.png'
 ---
