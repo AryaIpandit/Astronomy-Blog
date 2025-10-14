@@ -163,12 +163,12 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.nova-post-card {
   				position: relative;
-  				background: linear-gradient(to bottom right, #1a1a40, #000);
-  				border: 1px solid #00ffff;
-  				border-left: 4px solid #8a2be2;
+  				background: var(--card-bg);
+  				border: 1px solid var(--border);
+  				border-left: 4px solid var(--card-accent);
   				border-radius: 8px;
   				padding: 1em;
-  				box-shadow: 0 0 12px #4b0082;
+  				box-shadow: var(--shadow);
 			}
 
 			.nova-info-wrapper {
@@ -195,9 +195,8 @@ const posts = (await getCollection('blog')).sort(
 			.nova-info-box {
   				display: none;
   				position: absolute;
-  				top: 0px;
-  				right: 40px;
-				left: auto;
+  				top: 50%;
+				right: 100%;
   				background: #1a1a40;
   				color: #00ffff;
   				padding: 0.6em 1em;
@@ -210,9 +209,15 @@ const posts = (await getCollection('blog')).sort(
   				z-index: 21;
   				font-size: 0.9rem;
   				line-height: 1.4;
+				transform: translateY(-50%);
+				margin-right: 0.5em; 
 			}
 
 			.nova-info-button:hover .nova-info-box {
+  				display: block;
+			}
+
+			.nova-icon-wrapper:hover .nova-info-box {
   				display: block;
 			}
 
@@ -237,6 +242,8 @@ const posts = (await getCollection('blog')).sort(
 			}
 			.first-post .nova-icon-wrapper {
   				margin-right: clamp(2rem, 10vw, 12rem);
+				display: inline-block;
+  				position: relative;
 			}
 			.first-post .nova-post-date {
   				margin-left: clamp(2rem, 10vw, 12rem);

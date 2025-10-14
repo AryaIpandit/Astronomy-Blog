@@ -7,7 +7,22 @@
 :root {
 	--bg: #ffffff;
   	--text: #000000;
-  	--accent: #0077ff;
+  	--accent: #7a7d5e;
+	--accent-2: #9933ff;
+  	--card-bg: linear-gradient(to bottom left, #b1a9a9, #f7f7f7);
+  	--shadow: 0 0 10px rgba(0,0,0,0.5);
+  	--header-bg: #eee7e7;
+	--section-bg: linear-gradient(to bottom right, #d7b196, #a7a7bf);
+	--title-color: #1a1a1a;
+	--date-color: #555;
+	--card-accent: #999999;
+	--border: #000000;
+	--bg-2: #f7f7f7;
+	--info-text: #222222;
+	--section-border: #4b0082;
+  	--nova-box-text: #333333;
+  	--nova-box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
+	--ripple-color: #999999;
 }
 
 html[data-theme='dark'] {
@@ -20,6 +35,21 @@ html[data-theme='dark'] {
   --text: #e0e0e0;  
   --accent: #00ccff;
   --header-bg: #0b0b0b;
+  --accent-2: #8a2be2;
+  --card-bg: linear-gradient(to bottom right, #1a1a40, #000);
+  --shadow: 0 0 12px #4b0082;
+  --section-bg: linear-gradient(to bottom right, #0a0a23, #1a1a40);
+  --title-color: #00ccff;
+  --date-color: #ccc;
+  --card-accent: #8a2be2;
+  --border: #00ccff;
+  --info-bg: #1a1a40;
+  --info-text: #00ffff;
+  --nova-box-text: #00ffff;
+  --section-border: #8a2be2;
+  --nova-box-shadow: 0 0 12px #4b0082;
+  --ripple-color: #00ffff;
+  --bg-2: #0a0a23;
 }
 
 @font-face {

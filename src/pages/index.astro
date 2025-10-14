@@ -28,8 +28,9 @@ import RecentPosts from '../components/RecentPosts.astro';
 	</div>
     <Header />
     <main>
-		<div class="quote-container">
-  			<p id="quote-box" class="cosmic-quote"></p>
+		<div class="nova-quote-box">
+  			<p id="quote-text"></p>
+  			<span id="quote-author" class="author"></span>
 		</div>
 
 		<RecentPosts />
@@ -76,40 +77,39 @@ import RecentPosts from '../components/RecentPosts.astro';
 		</section>
     </main>
     <Footer />
-	<script>
-  		const quotes = [
-    		{ text: "Somewhere, something incredible is waiting to be known.", author: "Carl Sagan" },
-  			{ text: "The cosmos is within us. We are made of star-stuff.", author: "Carl Sagan" },
-  			{ text: "To confine our attention to terrestrial matters would be to limit the human spirit.", author: "Stephen Hawking" },
-			{ text: "The most incomprehensible thing about the universe is that it is comprehensible.", author: "Albert Einstein" },
-			{ text: "Not only is the Universe stranger than we think, it is stranger than we can think.", author: "Werner Heisenberg" },
-			{ text: "The Earth is the cradle of humanity, but mankind cannot stay in the cradle forever.", author: "Konstantin Tsiolkovsky" },
-			{ text: "The universe is under no obligation to make sense to you.", author: "Neil deGrasse Tyson" },
-			{ text: "The universe is filled with magical things patiently waiting for our wits to grow sharper.", author: "Eden Phillpotts" }
-  		];
+	<script is:client>
+  		async function loadQuote() {
+    		try {
+      			const response = await fetch('/src/data/quotes.json');
+      			const quotes = await response.json();
+      			const random = quotes[Math.floor(Math.random() * quotes.length)];
 
-  		let index = 0;
-  		const box = document.getElementById("quote-box");
+    			const textEl = document.getElementById('quote-text');
+    			const authorEl = document.getElementById('quote-author');
 
-		function showQuote() {
-    		box.style.opacity = 0;
-    		setTimeout(() => {
-      			box.innerHTML = `
-      				<span class="quote-text">“${quotes[index].text}”</span><br />
-      				<span class="quote-author">— ${quotes[index].author}</span>
-    			`;
-      			box.style.opacity = 1;
-      			index = (index + 1) % quotes.length;
-    		}, 800);
-  		}
+				textEl.style.opacity = 0;
+    			authorEl.style.opacity = 0;
 
-		showQuote();
-		setInterval(showQuote, 6000);
-	</script>
+				setTimeout(() => {
+      				textEl.textContent = `“${random.text}”`;
+      				authorEl.textContent = `— ${random.author}`;
 
+      				textEl.style.opacity = 1;
+      				authorEl.style.opacity = 1;
+    			}, 600); 
+  			} catch (err) {
+    			console.error('Error loading quotes:', err);
+  			}
+		}
+
+  		window.addEventListener('DOMContentLoaded', () => {
+    		loadQuote();
+    		setInterval(loadQuote, 5000);
+  		});
 	</script>
   </body>
   <style>
+  	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
   	#nova-loader {
     	position: fixed;
     	top: 0;
@@ -151,22 +151,37 @@ import RecentPosts from '../components/RecentPosts.astro';
     	100% { transform: rotate(360deg); }
   	}
 
-	.quote-container {
-  		background: linear-gradient(to right, #1a1a40, #000);
+	.nova-quote-box {
+  		background: var(--section-bg);
   		padding: 0.5em;
-  		border-radius: 8px;
+  		border-radius: 12px;
   		text-align: center;
   		max-width: 700px;
   		margin: 1em auto;
-		box-shadow: 0 0 10px #8a2be2;
+		box-shadow: var(--shadow);
+		color: var(--nova-box-text);
+		border: 1px solid var(--border);
+		font-family: 'Nunito', sans-serif;
+		font-weight: 500;
+		line-height: 1.6;
+		font-style: italic;
 	}
 
-	.cosmic-quote {
-  		font-size: 1.5rem;
-  		font-style: italic;
-  		color: #eee;
+	.nova-quote-box .author {
+  		display: block;
+  		margin-top: 1em;
+  		font-size: 1.2rem;
+  		color: var(--date-color);
+	}
+
+	#quote-text,
+	#quote-author {
   		opacity: 1;
-  		transition: opacity 0.8s ease-in-out;
+  		transition: opacity 0.4s ease-in-out;
+	}
+
+	.fade-out {
+  		opacity: 0;
 	}
 
 	.nova-section {
@@ -175,15 +190,16 @@ import RecentPosts from '../components/RecentPosts.astro';
   		max-width: 700px;
  		margin: 2em auto;
   		padding: 1em;
-  		background: #0b0b2e;
+  		background: var(--section-bg);
   		border-radius: 8px;
-  		color: #eee;
-  		box-shadow: 0 0 10px #4b0082;
+  		color: var(--nova-box-text);
+  		box-shadow: var(--nova-box-shadow);
+		border: 1px solid var(--border);
 	}
 
 	.nova-section h2 {
   		font-size: 1.6rem;
-  		color: #8a2be2;
+  		color: var(--accent);
   		margin-bottom: 1em;
   		text-align: center;
 	}
@@ -196,14 +212,14 @@ import RecentPosts from '../components/RecentPosts.astro';
 	.nova-card {
 		position: relative;
 		text-align: left;
-  		background: linear-gradient(to bottom right, #1a1a40, #000);
-		border: 2px solid rgba(0, 255, 255, 0.3);
-		border-left: 4px solid #8a2be2;
-  		color: #00ffff;
+  		background: var(--card-bg);
+		border: 2px solid (--border);
+		border-left: 4px solid var(--card-accent);
+  		color: var(--info-text);
   		font-family: 'Courier New', monospace;
   		padding: 1em;
   		border-radius: 8px;
- 		box-shadow: 0 0 20px rgba(138, 43, 226, 0.5);
+ 		box-shadow: var(--shadow);
   		flex: 1;
   		font-size: 0.85rem;
 		max-width: 55%;
@@ -214,11 +230,11 @@ import RecentPosts from '../components/RecentPosts.astro';
   		top: -1.2em;
   		left: 0;
   		font-size: 0.75rem;
-  		color: #8a2be2;
+  		color: var(--card-accent);
   		background: #000;
   		padding: 0.2em 0.5em;
   		border-radius: 4px;
-  		box-shadow: 0 0 6px #8a2be2;
+  		box-shadow: 0 0 6px var(--card-accent);
   		font-weight: bold;
 	}
 
@@ -235,7 +251,7 @@ import RecentPosts from '../components/RecentPosts.astro';
 	}
 
 	.nova-table td:first-child {
-  		color: #8a2be2;
+  		color: var(--card-accent);
   		width: 35%;
 		padding-right: 0.4em
 	}
