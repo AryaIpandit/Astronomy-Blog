@@ -1,9 +1,11 @@
 ---
-title: 'A'
-description: 'How do scientists take something as ordinary as dust or air and uncover hidden stories about planets and life? The secret is a molecular race, where each compound crosses the finish line at its own time — and those tiny differences reveal entire worlds.'
+title: 'When Brands Sparkle Like Diyas'
+description: 'Every Diwali, brands compete for attention, but the best campaigns do more than sell. They weave nostalgia, humor, and community into stories that feel like part of the festival itself. From Cadbury’s neighborhood‑first initiatives to Zomato’s playful parodies, this post explores how advertising has shifted from loud one‑way messages to full‑funnel journeys that actually connect with people.'
 pubDate: '16 Oct, 2025'
-image: '/BlogImages/Gas-Chromatography/gas-chromatography.png'
+image: '/BlogImages/Diwali-Advertising/diwali.png'
 ---
+
+![Main](/BlogImages/Diwali-Advertising/diwali.png)
 
 # Diwali ads: how five campaigns shaped the festival online
 
@@ -178,7 +180,7 @@ You meet people in their scrolling habits and you give them a reason to tap now 
 
 #### Old, functional food delivery ads, 2016 to 2019
 
-![](/BlogImages/a/zomato2017-18.png)
+![](/BlogImages/Diwali-Advertising/zomato2017-18.png)
 
 - **Emphasis:** Discounts, speed and convenience of ordering food online
 - **Format:** TV spots, static banners, app notifications
