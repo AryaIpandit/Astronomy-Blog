@@ -202,3 +202,23 @@ hr {
 	/* added line to stop words getting smushed together (as they go onto separate lines and some screen readers do not understand line feeds as a space */
 	white-space: nowrap;
 }
+
+article table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 1em 0;
+  font-size: 0.95rem;
+  font-family: 'Nunito', sans-serif;
+  color: var(--text);
+}
+
+article th,
+article td {
+  border: 1px solid var(--text);
+  padding: 0.6em 0.8em;
+  text-align: left;
+}
+
+article th {
+  color: var(--text);
+}

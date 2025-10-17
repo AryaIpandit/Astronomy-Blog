@@ -35,6 +35,27 @@ import RecentPosts from '../components/RecentPosts.astro';
 
 		<RecentPosts />
 
+		<section class="nova-section gateway-intro">
+			<h2>What is The Galactic Gateway?</h2>
+  			<div class="gateway-flex">
+				<div class="gateway-text">
+  					<p>
+    					The Galactic Gateway is a space I built to share curiosity about the universe. The name comes from the feeling that astronomy is like a doorway — once you step through, you start seeing connections everywhere, from the stars above to the science shaping our future.
+  					</p>
+  					<p>
+    					The blog mixes explanations of big cosmic ideas with smaller reflections, sometimes pulling in history, sometimes looking at the latest discoveries. It’s not meant to be a lecture hall, more like sitting down with someone who’s just as fascinated as you are and wants to swap thoughts.
+  					</p>
+					<p>
+						At its heart, The Galactic Gateway is about keeping that sense of wonder alive. If you’ve ever looked up at the night sky and felt both tiny and amazed, you’re already in the right place.
+					</p>
+				</div>
+
+				<div class="gateway-image">
+					<img src="/GGFull.png" alt="The Galactic Gateway Illustration">
+				</div>
+			</div>
+		</section>
+
 		<section class="nova-section">
   			<h2>Meet Nova the Neutrino</h2>
   			<p>
@@ -265,14 +286,6 @@ import RecentPosts from '../components/RecentPosts.astro';
   		max-width: 220px;
 	}
 
-	.nova-intro {
-		font-weight: normal;
-		font-size: 15.2px !important;
-  		line-height: 1.6;
-  		margin-bottom: 1.5em;
-  		text-align: center;
-	}
-
 	.nova-flex {
   		display: flex;
   		align-items: flex-start;
@@ -291,8 +304,7 @@ import RecentPosts from '../components/RecentPosts.astro';
 	}
 
 	.nova-lore,
-	.nova-role,
-	.nova-intro {
+	.nova-role{
   		font-size: 0.95rem !important;
   		line-height: 1.6;
   		margin-top: 1em;
@@ -310,5 +322,49 @@ import RecentPosts from '../components/RecentPosts.astro';
   		}
 	}
 
+	.gateway-text {
+  		flex: 1 1 55%;
+  		font-size: 1rem;
+  		line-height: 1.6;
+		text-align: left;
+	}
+
+	.gateway-flex {
+  		display: flex;
+  		align-items: center;
+  		justify-content: space-between;
+  		gap: 2rem;
+	}
+
+	.gateway-image {
+  		flex: 1 1 40%;
+  		max-width: 320px;
+	}
+
+	.gateway-image img {
+  		width: 100%;
+  		height: auto;
+  		border-radius: 12px;
+  		box-shadow: 0 0 10px var(--card-accent);
+  		object-fit: contain;
+	}
+
+	@media (max-width: 720px) {
+  		.gateway-flex {
+    		flex-direction: column;
+    		text-align: left;
+  		}
+
+  		.gateway-image {
+    		margin-top: 1rem;
+    		max-width: 100%;
+  		}
+	}
+
+	.gateway-intro h2 {
+  		text-align: center;
+  		display: block;
+  		width: 100%;
+	}
 	</style>
 </html>
