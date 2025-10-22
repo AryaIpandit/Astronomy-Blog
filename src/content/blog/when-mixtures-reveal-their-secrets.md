@@ -1,6 +1,6 @@
 ---
 title: 'When Mixtures Reveal Their Secrets'
-description: 'How do scientists take something as ordinary as dust or air and uncover hidden stories about planets and life? The secret is a molecular race, where each compound crosses the finish line at its own time — and those tiny differences reveal entire worlds.'
+description: 'Every atom carries a bias, a tiny tilt in the race of chemistry. Follow that tilt, and you uncover stories etched into rocks, oceans, and even alien skies — stories that reveal where life has been, and where it might be waiting.'
 pubDate: '10 Oct, 2025'
 image: '/BlogImages/Gas-Chromatography/gas-chromatography.png'
 ---
