@@ -5,13 +5,6 @@ pubDate: '18 Oct, 2025'
 image: '/BlogImages/Metabolic-Fractionation/mf.png'
 ---
 
-import pkg from 'react-katex'
-import 'katex/dist/katex.min.css'
-
-const { InlineMath, BlockMath } = pkg
-
-export default ({ children }) => <>{children}</>
-
 ![Main](/BlogImages/Metabolic-Fractionation/mf.png)
 
 # The Subtle Chemistry That Speaks for Life
@@ -47,7 +40,7 @@ In the **carbon cycle**, photosynthesis is the classic case. Plants and microbes
 
 In the **nitrogen cycle**, microbes that fix nitrogen or reduce nitrate leave behind distinct δ$^{15}N$ signals. These signals get locked into soils and sediments, giving us a record of how nitrogen moved through ecosystems in the past.
 
-![](/BlogImages/Metabolic-Fractionation/nitrogen-cycle.jpg)
+![](/BlogImages/Metabolic-Fractionation/nitrogen-cycle.png)
 
 And in the **sulphur cycle**, microbes that reduce sulphate to sulphide leave behind sulphide that is very depleted in $^{34}S$. This is another unmistakable biosignature, because abiotic processes rarely push sulphur isotopes that far.
 
