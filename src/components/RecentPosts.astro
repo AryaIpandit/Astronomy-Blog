@@ -207,7 +207,23 @@ const recentPosts = posts
             flex-wrap: wrap;
             flex-direction: column;
         }
-
+        .nova-info-box {
+          position: absolute;
+          top: 100%;
+          left: 50%;
+          transform: translateX(-50%);
+          width: auto;
+          max-width: 90vw;
+          min-width: 160px;
+          margin-top: 0.5rem;
+          font-size: 0.85rem;
+          padding: 0.6em 1em;
+          white-space: normal;
+          word-wrap: break-word;
+          overflow-wrap: anywhere;
+          box-sizing: border-box;
+          z-index: 10;
+        }
         .nova-post-card {
              max-width: 100%;
         }
