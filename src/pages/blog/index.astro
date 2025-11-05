@@ -160,16 +160,22 @@ const posts = (await getCollection('blog')).sort(
     				display: block;
   				}
 				.nova-info-box {
-    				max-width: 90vw;
+    				position: relative !important;
+    				left: auto !important;
+    				right: auto !important;
+    				top: auto !important;
+    				transform: none !important;
+    				display: block;
     				width: auto;
-					min-width: 200px;	
-    				font-size: 0.9rem;
-    				word-wrap: break-word;
-					word-wrap: break-word;
+					max-width: 90vw;
+					margin: 0.5rem auto;
+					font-size: 0.85rem;
+					padding: 0.6em 1em;
 					white-space: normal;
-    				overflow-wrap: anywhere;
-					position: static;
-  				}
+					word-wrap: break-word;
+					overflow-wrap: anywhere;
+					z-index: 21;
+  }
 			}
 				@media (max-width: 700px) {
   					.nova-info-box {
