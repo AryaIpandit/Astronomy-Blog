@@ -121,23 +121,39 @@ const posts = (await getCollection('blog')).sort(
 			}
 			@media (max-width: 720px) {
 				ul {
-					gap: 0.5em;
+					grid-template-columns: 1fr;
+    				gap: 1rem;
 				}
 				ul li {
-					width: 100%;
-					text-align: center;
+					grid-column: auto;	
+    				text-align: left; 
 				}
 				ul li:first-child {
-					margin-bottom: 0;
+					grid-column: auto;
 				}
-				ul li:first-child .title {
-					font-size: 1.563em;
-				}
+				.title {
+    				font-size: 1.563em;
+    				text-align: left;
+  				}
 				.first-post .nova-icon-wrapper,
   				.first-post .nova-post-date {
     				margin: 0;
     				text-align: center;
   				}
+				.nova-post-img {
+    				max-width: 100%;
+    				height: auto;
+					margin: 0 auto 0.5rem;
+    				display: block;
+  				}
+				.nova-info-box {
+    				max-width: 90vw;
+    				width: auto;
+    				font-size: 0.9rem;
+    				word-wrap: break-word;
+    				overflow-wrap: anywhere;
+  				}
+			}
 				@media (max-width: 700px) {
   					.nova-info-box {
     					width: 80vw; 

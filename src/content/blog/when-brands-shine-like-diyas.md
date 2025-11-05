@@ -1,5 +1,5 @@
 ---
-title: 'When Brands Sparkle Like Diyas'
+title: 'When Brands Shine Like Diyas'
 description: 'Every Diwali, brands compete for attention, but the best campaigns do more than sell. They weave nostalgia, humor, and community into stories that feel like part of the festival itself. From Cadbury’s neighborhood‑first initiatives to Zomato’s playful parodies, this post explores how advertising has shifted from loud one‑way messages to full‑funnel journeys that actually connect with people.'
 pubDate: '5 Nov, 2025'
 image: '/BlogImages/Diwali-Advertising/diwali.png'
