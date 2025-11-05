@@ -135,10 +135,19 @@ const posts = (await getCollection('blog')).sort(
     				font-size: 1.563em;
     				text-align: left;
   				}
-				.first-post .nova-icon-wrapper,
-  				.first-post .nova-post-date {
-    				margin: 0;
-    				text-align: center;
+				.first-post .nova-icon-wrapper {
+    				margin-right: 0;
+    				justify-self: start;
+  				}
+				.first-post .nova-post-date {
+					margin-left: 0;
+    				justify-self: end;
+    				text-align: right;
+				}
+				.nova-date-row {
+    				display: flex;
+    				justify-content: space-between;
+    				align-items: center;
   				}
 				.nova-post-img {
     				max-width: 100%;
