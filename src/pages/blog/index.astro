@@ -256,7 +256,11 @@ const posts = (await getCollection('blog')).sort(
 			.nova-icon-wrapper:hover .nova-info-box {
   				display: block;
 			}
-
+			@media (min-width: 721px) {
+				.nova-info-box {
+					min-width: 400px;
+				}
+			}
 			@keyframes novaRipple {
   				0% {
     				transform: translate(-50%, -50%) scale(1);
