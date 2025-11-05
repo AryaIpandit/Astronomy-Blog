@@ -152,7 +152,7 @@ const posts = (await getCollection('blog')).sort(
     				justify-content: space-between;
     				align-items: center;
 					padding: 0 1rem;
-  				}
+  				}	
 				.nova-post-img {
     				max-width: 100%;
     				height: auto;
@@ -162,9 +162,13 @@ const posts = (await getCollection('blog')).sort(
 				.nova-info-box {
     				max-width: 90vw;
     				width: auto;
+					min-width: 200px;	
     				font-size: 0.9rem;
     				word-wrap: break-word;
+					word-wrap: break-word;
+					white-space: normal;
     				overflow-wrap: anywhere;
+					position: static;
   				}
 			}
 				@media (max-width: 700px) {
