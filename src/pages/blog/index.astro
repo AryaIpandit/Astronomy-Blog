@@ -160,22 +160,25 @@ const posts = (await getCollection('blog')).sort(
     				display: block;
   				}
 				.nova-info-box {
-    				position: relative !important;
-    				left: auto !important;
-    				right: auto !important;
-    				top: auto !important;
-    				transform: none !important;
-    				display: block;
-    				width: auto;
-					max-width: 90vw;
-					margin: 0.5rem auto;
-					font-size: 0.85rem;
+					position: absolute;
+					top: 50%;
+					right: 100%;
+					transform: translateY(-50%);
+					background: var(--bg-2);
+					color: var(--info-text);
 					padding: 0.6em 1em;
+					border-radius: 8px;
+					box-shadow: 0 0 10px var(--accent);
+					border: 1px solid var(--border);
+					z-index: 21;
+
+					width: auto;
+					max-width: 300px;
+					min-width: 180px;
 					white-space: normal;
 					word-wrap: break-word;
 					overflow-wrap: anywhere;
-					z-index: 21;
-  }
+				}
 			}
 				@media (max-width: 700px) {
   					.nova-info-box {
