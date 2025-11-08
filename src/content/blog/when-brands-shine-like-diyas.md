@@ -344,7 +344,7 @@ Early Diwali ads were mass aimed. They leaned on archetypes such as joint famili
 
 While the critiques and comparisons give us a detailed look at how each brand approaches Diwali, some of the patterns only really come alive when you see them visually. Advertising during the festival has never been about a single audience — it’s about weaving together multiple strands of Indian society, from young couples celebrating their first Diwali together to families in smaller towns looking for affordable gifting options. To capture this diversity, I’ve mapped out the **eight most common audience segments** that Diwali campaigns between 2019 and 2025 consistently target: urban youth, young couples and nuclear families, women professionals, Tier 2 and Tier 3 shoppers, families with children, nostalgia‑seekers, small businesses and local communities, and purpose‑driven consumers.
 
-![](attachment/target_audience_heatmap-20251104T135157.png)
+![](/BlogImages/Diwali-Advertising/target_audience_heatmap-20251104T135157.png)
 
 The heatmap here shows how strongly each brand leans into these groups. For instance, Cadbury’s campaigns light up the “small businesses” and “purpose-driven customers” cells, while Tanishq is far more concentrated around the urban youth and young couples. Flipkart spreads itself across value‑driven shoppers and the youth, whereas Paper Boat sits firmly in the nostalgia corner. Zomato, unsurprisingly, dominates the urban youth and tier 2 & 3 shopper segments. Seeing this side by side makes the strategic differences much clearer than words alone.
 ___
