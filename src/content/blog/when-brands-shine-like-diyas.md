@@ -3,9 +3,9 @@ title: 'When Brands Shine Like Diyas'
 description: 'Every Diwali, brands compete for attention, but the best campaigns do more than sell. They weave nostalgia, humor, and community into stories that feel like part of the festival itself. From Cadbury’s neighborhood‑first initiatives to Zomato’s playful parodies, this post explores how advertising has shifted from loud one‑way messages to full‑funnel journeys that actually connect with people.'
 pubDate: '5 Nov, 2025'
 image: '/BlogImages/Diwali-Advertising/diwali.png'
----
+--- 
 
-![Main](/BlogImages/Diwali-Advertising/diwali.png)
+![Main](/BlogImages/Diwali-Advertising/diwali.png) 
 
 # Diwali ads: how five campaigns shaped the festival online
 
@@ -26,16 +26,18 @@ Diwali is a perfect storm for advertising. It is emotional, social and everywher
 
 ### Messaging
 
-Cadbury has long been the sweet messenger of Diwali. In recent years it stepped beyond boxes of chocolates into community support. The standout was the #NotJustACadburyAd push in 2021, where local shopkeepers could generate customized videos with Shah Rukh Khan inviting people to visit their stores. It felt playful, but it was also a lifeline during a tough period for small businesses.
+Cadbury’s 2021 **#NotJustACadburyAd** campaign marked a turning point in how Diwali advertising could blend emotion with technology. Instead of a generic festive film, the brand created a platform where thousands of small shopkeepers could generate personalized videos featuring Shah Rukh Khan inviting customers to their stores. It was a clever use of AI, but more importantly, it reframed Cadbury’s role: not just as a seller of chocolates, but as a facilitator of community resilience during a difficult economic moment.
 
-Follow up ideas kept the momentum. QR coded billboards, virtual storefronts for hawkers and programs that spotlighted home based entrepreneurs turned “have a sweet” into “help someone thrive.” The message evolved from family togetherness to generosity that you can act on right away.
+The ad’s strength lay in how it layered Cadbury’s long‑standing festive associations — sweetness, gifting, togetherness — with a new dimension of _actionable generosity_. Watching SRK “endorse” the corner shop down the street gave viewers a sense of intimacy and empowerment. It wasn’t just about buying a box of Celebrations; it was about keeping a neighbor’s business alive.
+
+By anchoring the campaign in both nostalgia and social impact, Cadbury managed to expand the meaning of Diwali advertising. The message was no longer only “share a sweet with family,” but “support your community while you celebrate.” That dual resonance is what made #NotJustACadburyAd stand out in the crowded festive season.
 #### Why this is cool  
 It proved an ad can be more than a film. It can be a clickable system that drives real footfall, real orders and real income. The emotional payoff stays, but the utility increases.
 ### Creativity
 
-Cadbury’s creativity is less about pretty frames and more about mechanics that unlock action. In 2021 and 2022 the team produced a huge number of localized videos that felt personal in each neighborhood. Social posts, TV spots and outdoor placements worked together. The clever part was how scannable experiences bridged the gap between seeing and doing. A quick scan, a local store appears and your Diwali purchase suddenly supports someone near you.
+Cadbury’s creativity in **#NotJustACadburyAd** was less about cinematic polish and more about mechanics that unlocked participation. In 2021 and 2022, the brand produced thousands of hyper‑localized videos that felt personal in each neighborhood, with Shah Rukh Khan seemingly endorsing the corner shop down the street. Social posts, TV spots, and outdoor placements worked in sync, but the cleverest touch was the scannable layer: a quick scan, and suddenly your Diwali purchase supported a local store. The campaign turned a festive greeting into an actionable act of generosity.
 
-Older creative lines like “Kuch Accha Ho Jaaye, Kuch Meetha Ho Jaaye” built the brand’s emotional base. The newer wave kept that feeling and added tools that let viewers participate.
+What made this work was how it built on Cadbury’s older emotional foundation — the long‑running line _“Kuch Accha Ho Jaaye, Kuch Meetha Ho Jaaye”_ had already positioned the brand as a symbol of sweetness and goodwill. The newer wave didn’t discard that feeling; it extended it. By adding tools that let viewers participate directly, Cadbury shifted from _telling a story_ to _enabling one_. That leap — from sentiment to action — is what gave #NotJustACadburyAd its cultural weight.
 #### Why this matters  
 Personalization with a purpose turns a passive viewer into a participant. It is not only memorable, it moves numbers.
 ### Audience targeting
@@ -86,7 +88,7 @@ The move is from one way feelings to two way participation. Early ads delivered 
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe
-    src="https://www.youtube.com/embed/l6DNB9R8YyY"
+    src="https://www.youtube.com/embed/-psuZA5jZn0"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -96,14 +98,14 @@ The move is from one way feelings to two way participation. Early ads delivered 
 
 ### Messaging
 
-Tanishq moved from ads about men gifting jewelry to ads about women expressing identity. The Nav Raani campaign, directed by Mira Nair, treats everyday women as modern queens in their own lives. Pehli Diwali captured firsts that matter, such as a first Diwali after opening a business or joining the armed forces.
+Tanishq’s **Pehli Diwali** campaign reframed festive advertising by shifting the spotlight from gifting to self‑expression. Instead of portraying jewelry as something bestowed, the films highlighted women marking personal milestones — a first Diwali after opening a business, after joining the armed forces, or after stepping into a new role. The production was cinematic yet intimate: warm lighting, careful wardrobe, and music that created emotional depth without slipping into cliché. Scripts were brief but precise, giving the stories space to resonate without overstatement.
 
-The tone stays festive, but the stories give space to agency. Jewelry becomes part of a personal milestone rather than a passive ornament.
+By anchoring jewelry in moments of agency and achievement, _Pehli Diwali_ positioned ornaments as markers of identity rather than passive decoration. The result was a festive campaign that stayed rooted in tradition while speaking directly to contemporary aspirations, giving Diwali advertising a more progressive and personal dimension.
 #### Why this is cool  
 It reframes Diwali from a ritual someone performs for you into a moment you claim for yourself. Ads can mirror social change and gently push it forward.
 ### Creativity
 
-The production is cinematic and careful. Lighting, wardrobe and music create warmth without clichés. Scripts are brief, but precise. The team also localizes stories. A Tamil film speaks in Tamil. A Bengal story draws on Durga imagery. You get national unity without losing regional character.
+The production is cinematic and deliberate. Lighting, wardrobe, and music create warmth without slipping into festive clichés, while the scripts remain brief but precise, letting the emotion carry the scene. Beyond craft, the campaign also invested in **regional authenticity**. Instead of relying on a single master film dubbed into multiple languages, the team created localized stories: a Tamil film spoken in Tamil, a Bengali film drawing on Durga imagery, and others that reflected local traditions. This approach gave the campaign a sense of national unity while still preserving cultural character.
 #### Why it matters  
 Precision makes the ad feel like it is for you rather than a generic pitch. That precision builds trust at higher price points.
 ### Audience targeting
@@ -133,7 +135,7 @@ A brand that sells considered purchases needs consistency across the journey. Th
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
   <iframe
-    src="https://www.youtube.com/embed/-psuZA5jZn0"
+    src="https://www.youtube.com/embed/l6DNB9R8YyY"
     style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
     frameborder="0"
     allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
@@ -141,10 +143,10 @@ A brand that sells considered purchases needs consistency across the journey. Th
   ></iframe>
 </div>
 
-- **Focus:** Women’s empowerment, self purchasing, life milestones, regional celebration
-- **Format:** Digital first short films, influencer amplification, connected TV, interactive WhatsApp catalogues
-- **Tone:** Inclusive, culturally sensitive, participatory
-- **Message:** Authenticity and layered identity
+- **Focus:** Women’s empowerment framed as self‑worth and everyday queenship, jewelry as a symbol of identity rather than a gift
+- **Format:** Single flagship cinematic film directed by Mira Nair, supported by digital amplification and brand storytelling across social and TV
+- **Tone:** Regal, cinematic, aspirational, with warmth and inclusivity
+- **Message:** Jewelry as a declaration of agency and modern identity — celebrating women as queens in their own lives
 
 The shift is about message and medium. Digital platforms allow Tanishq to listen, localize and respond. That approach supported festive quarter growth even with gold price swings.
 
@@ -163,7 +165,11 @@ The shift is about message and medium. Digital platforms allow Tanishq to listen
 
 ### Messaging
 
-Zomato leaned into humor and pop culture. Mission Diwali spoofed a space launch, then pivoted to the real mission, getting mithai to your home. The line “Mithai Zomato Karo, desh ko roshan karo” clicks because it matches how families actually celebrate. Food closes the loop. Delivery completes the moment.
+Zomato’s **Mission Diwali** campaign leaned into humor and pop culture with a spoof of a space launch, complete with countdowns, control rooms, and mock‑serious astronauts. The gag worked because it exaggerated the drama of a rocket mission, only to pivot to the “real” mission: getting mithai delivered to your doorstep. That twist was more than just a joke — it reframed food delivery as something nationally significant, a small but essential act that lights up the festival.
+
+The line _“Mithai Zomato Karo, desh ko roshan karo”_ lands because it mirrors how families actually celebrate. Diwali isn’t complete without sweets, and Zomato positioned itself as the bridge between craving and fulfillment. Food closes the loop: the diyas are lit, the family gathers, and mithai arrives to seal the moment. Delivery becomes not just a service but part of the ritual.
+
+What makes the ad effective is how it balances scale and intimacy. The space‑launch parody gives it spectacle and shareability, while the mithai punchline grounds it in everyday life. It’s playful, self‑aware, and perfectly tuned to digital audiences who enjoy memes and cultural references. At the same time, it reinforces Zomato’s brand promise: convenience that feels celebratory rather than transactional.
 #### Why this is cool  
 It proves you can be lighthearted and still land a clear value proposition. Humor does not dilute the offer when the offer is baked into the joke.
 ### Creativity
@@ -173,9 +179,9 @@ The ad uses bright color, quick cuts and a familiar festival rhythm. It feels li
 Shareability is not just an outcome, it is a design principle. When a film is easy to forward, it becomes part of the celebration.
 ### Audience targeting
 
-Zomato’s reach cuts across age groups. Grandparents see familiar sweets. Younger viewers enjoy references and memes. Placement focuses on YouTube, Instagram and Facebook. A slight nudge on scarcity and occasional codes drives action among price sensitive users.
+Zomato’s **Mission Diwali** was designed to cut across generations. The spoofed space‑launch setup, with its countdowns and mock‑serious tone, appealed to younger viewers who enjoy meme culture and pop‑reference humor. At the same time, the reveal — mithai arriving at home — tapped into nostalgia for older audiences who associate Diwali with traditional sweets. Placement leaned heavily on YouTube, Instagram, and Facebook, ensuring the parody film reached digital‑first users while shorter edits circulated as shareable clips. Occasional discount codes and scarcity nudges were layered in to activate price‑sensitive segments, turning attention into orders.
 #### Why it is practical  
-You meet people in their scrolling habits and you give them a reason to tap now rather than later.
+The ad speaks to both nostalgia and meme culture, reaching older viewers through sweets and younger ones through parody. By placing long and short edits on the platforms each group already uses, Zomato made the campaign feel natural and easy to act on.
 ### Comparative analysis, old and new
 
 #### Old, functional food delivery ads, 2016 to 2019
@@ -186,6 +192,7 @@ You meet people in their scrolling habits and you give them a reason to tap now 
 - **Format:** TV spots, static banners, app notifications
 - **Audience:** Broad urban users, focused on young professionals looking for quick meals
 - **Message:** Zomato as a utility service for fast food delivery
+
 #### New, Mission Diwali and meme‑driven campaigns, 2023 to 2025
 
 <div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
@@ -208,31 +215,25 @@ The shift is from purely functional messaging to cultural participation, positio
 ---
 ## Flipkart Diwali campaigns, 2024 to 2025
 
-<div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
-  <iframe
-    src="https://www.youtube.com/embed/psj8PBNokiU"
-    style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"
-    frameborder="0"
-    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-    allowfullscreen
-  ></iframe>
-</div>
+![](https://youtu.be/psj8PBNokiU?si=n_T35ihpZMZLWPrO)
 
 ### Messaging
 
-Flipkart is about upgrades and deals rather than nostalgia. In 2025 it moved into a podcast style film with Pankaj Tripathi and Raj Shamani. The dialogue uses current slang and jokey banter to pitch fashion and lifestyle upgrades. The message is simple. Diwali is a fresh start, so update the things you use daily.
+Flipkart’s **Big Bang Sale** campaign, built around the hook _“Inteha Ho Gayi Intezaar Ki,”_ leaned on urgency and scale rather than nostalgia. The ad dramatized the anticipation of Diwali shopping through a deliberately slow build, with the refrain stretched out to mirror the feeling of waiting. Instead of quick cuts or flashy visuals, the pacing itself became the device — holding viewers in suspense until the sale reveal. The line worked as both a cultural reference and a sales trigger, exaggerating the sense of delay before the deals finally arrived.
+
+The message was simple: Diwali is the moment to refresh and upgrade, and Flipkart is the destination where that upgrade happens. By framing the sale as an event in itself, the ad positioned shopping not as a chore but as part of the festival’s shared anticipation.
 #### Why this is interesting  
-It tries to make a sale feel like a social moment. If the tone fits how people talk, it lowers resistance to a quick add to cart.
+The ad uses slowness and repetition to dramatize waiting itself. By stretching out the anticipation with the refrain _“Inteha Ho Gayi Intezaar Ki,”_ it mirrors how audiences feel before a big sale. That shared sense of buildup makes the eventual “add to cart” feel like release, turning delay into motivation.
 ### Creativity
 
-Merging influencer culture, a star who feels trustworthy and a long form format was a smart bet. The cutdowns worked across short form platforms. The meme energy helped with reach and relevance. The brand looked more youthful without abandoning scale.
+The choice to build the film around a single nostalgic track and slow‑motion visuals was a smart bet. The stretched refrain _“Inteha Ho Gayi Intezaar Ki”_ carried the weight of anticipation, while the imagery of old possessions going out in a blaze of glory gave the campaign its spectacle. Shorter edits of the same idea worked well across digital platforms, keeping the hook intact. By leaning on nostalgia and dramatizing upgrades, Flipkart managed to look festive and larger‑than‑life without losing its core identity as the destination for deals.
 #### Why it matters  
-Format choice can signal brand personality. A podcast feel says “we are in your feed and your ears.”
+Format choice can signal brand personality. By leaning on a slow‑burn, music‑driven film built around a familiar refrain, Flipkart positioned itself as larger‑than‑life. The stretched hook _“Inteha Ho Gayi Intezaar Ki”_ made the sale feel like a cultural countdown, giving the brand a festive, event‑like presence.
 ### Audience targeting
 
-Flipkart targets price conscious online native consumers across urban and smaller towns. The mix includes games, challenges, short videos and TV. Different creative lines speak to different segments while keeping the same core promise of upgrading your life during the festival.
+The film speaks to a wide base by showing worn‑out possessions and pairing them with the stretched refrain _“Inteha Ho Gayi Intezaar Ki.”_ Older viewers connect with the nostalgic song, while younger ones respond to the idea of upgrading. One anthem‑like idea unifies both groups under the same promise: Diwali is the time to refresh.
 #### Why it is practical  
-You need breadth for volume and depth for conversion. A layered plan serves both.
+A single, universal hook travels easily across demographics, making the campaign memorable without needing multiple versions.
 ### Comparative analysis, old and new
 
 #### Old, Big Billion Days and Diwali Sale ads, 2012 to 2018
@@ -282,12 +283,12 @@ Paper Boat sells memory before it sells a drink. The films use quiet moments and
 Minimalism can stand out during the noisiest season. In a crowded feed, a quiet story can feel more honest.
 ### Creativity
 
-The stories are short, sometimes wordless. The homes look lived in rather than styled. The light is warm without feeling staged. Influencer storytelling adds a layer of real voices and personal posts. The approach has driven engagement lifts compared to generic beverage ads.
+The film is simple and wordless. A dining table gradually fills with festive food and Paper Boat drinks, lit in a warm, natural way. The slow build captures everyday celebration without over‑styling, making the brand feel authentic and part of the ritual.
 #### Why it matters  
 When emotion is the product, restraint makes it stronger. You leave space for the viewer to fill in their own memories.
 ### Audience targeting
 
-Paper Boat reaches urban millennials and Gen Z who want authenticity and older viewers who enjoy a window to the past. Regional language posts and small interactive touches like filters complete the mix. The diaspora angle brings distant families into the same mood even when they are far away.
+Paper Boat appeals to urban millennials and Gen Z through its authentic, everyday visuals, while older viewers connect with the nostalgic drinks and festive setting. The simple table‑filling metaphor also resonates with the diaspora, offering a shared sense of celebration across distances.
 #### Why it is practical  
 If your promise is a feeling, you need to meet people in their language and rhythm.
 ### Comparative analysis, old and new
@@ -322,22 +323,31 @@ The shift is from quirky product awareness to deep emotional resonance, with Pap
 ---
 ## Comparative media analysis, old and new formats
 
-### Cadbury and Tanishq, TV and print versus digital and social
-
-Early Diwali ads were static and mass aimed. They leaned on archetypes such as joint families and gifting rituals. Current ads are dynamic and segmented. They use lived experiences, participation and interactivity. The change is ideological and technical. Inclusion and generosity replace narrow roles. Brands are shifting from one-way awareness focused ads to personalised campaigns that engage customers.
+Early Diwali ads were mass aimed. They leaned on archetypes such as joint families and gifting rituals. Current ads are dynamic and segmented. They use lived experiences, participation and interactivity. The change is ideological and technical. Inclusion and generosity replace narrow roles. Brands are shifting from one-way awareness focused ads to personalised campaigns that engage customers.
 
 #### Key contrasts
 
 <div class="styled-table">
 
-| Brand   | Old formats and themes                         | New formats and themes                                           | Outcome                             |
-|---------|------------------------------------------------|------------------------------------------------------------------|-------------------------------------|
-| Cadbury | Family TV films and print                      | AI and UGC, digital personalization, QR actions                  | Higher participation and business lift |
-| Tanishq | Male gifting and arranged marriage scripts     | Empowerment, life milestones, connected TV, WhatsApp catalogues | More inclusivity and agency         |
+| Brand      | Old formats and themes                                                           | New formats and themes                                                                                                                | Outcome                                                                                                     |
+| ---------- | -------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
+| Cadbury    | Family TV films and print                                                        | AI and UGC, digital personalization, QR actions                                                                                       | Higher participation and business lift                                                                      |
+| Tanishq    | Male gifting and arranged marriage scripts                                       | Empowerment, life milestones, connected TV, WhatsApp catalogues                                                                       | More inclusivity and agency                                                                                 |
+| Zomato     | Straightforward discount ads, app‑centric promos, print tie‑ups                  | Meme‑first digital voice, witty push notifications, parody films, hyper‑local targeting, festival‑specific edit                       | Built a strong youth‑centric identity, cultural relevance, and high engagement beyond pure discounts        |
+| Flipkart   | Functional sale countdowns, deal‑heavy TV spots, celebrity‑led jingles           | Large‑scale festive films (e.g. _Big Bang Sale_), humor‑driven shorts, regional language adaptations, influencer tie‑ins              | Positioned sales as cultural events, broadened household appeal, and reinforced trust in value + scale      |
+| Paper Boat | Nostalgic print ads, sentimental long‑form storytelling about childhood memories | Minimalist, wordless films (e.g. Diwali table), regional language campaigns, digital nostalgia storytelling, experiential activations | Strengthened authenticity, connected across generations, and built emotional equity around everyday rituals |
 
 </div>
 
 ---
+## Infographics & Visual Insights
+
+While the critiques and comparisons give us a detailed look at how each brand approaches Diwali, some of the patterns only really come alive when you see them visually. Advertising during the festival has never been about a single audience — it’s about weaving together multiple strands of Indian society, from young couples celebrating their first Diwali together to families in smaller towns looking for affordable gifting options. To capture this diversity, I’ve mapped out the **eight most common audience segments** that Diwali campaigns between 2019 and 2025 consistently target: urban youth, young couples and nuclear families, women professionals, Tier 2 and Tier 3 shoppers, families with children, nostalgia‑seekers, small businesses and local communities, and purpose‑driven consumers.
+
+![](attachment/target_audience_heatmap-20251104T135157.png)
+
+The heatmap here shows how strongly each brand leans into these groups. For instance, Cadbury’s campaigns light up the “small businesses” and “purpose-driven customers” cells, while Tanishq is far more concentrated around the urban youth and young couples. Flipkart spreads itself across value‑driven shoppers and the youth, whereas Paper Boat sits firmly in the nostalgia corner. Zomato, unsurprisingly, dominates the urban youth and tier 2 & 3 shopper segments. Seeing this side by side makes the strategic differences much clearer than words alone.
+___
 ## Key findings across campaigns
 
 - **Narrative over pure product push:** the strongest work invites viewers into a story and a role rather than a one click buy
