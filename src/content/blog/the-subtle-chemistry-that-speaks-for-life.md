@@ -11,7 +11,7 @@ image: '/BlogImages/Metabolic-Fractionation/mf.png'
 
 When we think about life leaving traces behind, we usually imagine fossils, bones, or maybe chemical residues. But life also leaves something subtler, a kind of _atomic accent_. This accent comes from the way living organisms handle isotopes, the slightly different versions of the same element.
 
-At first glance, isotopes don’t seem like a big deal. Carbon is carbon, right? But here’s the twist: carbon can come as $^{12}C$ or <InlineMath math=${13}C$, nitrogen as $^{14}N$ or $^{15}N$, sulphur as $^{32}S$ or $^{34}S$. The only difference is the number of neutrons in the nucleus. That tiny difference changes the atom’s mass, and mass changes how bonds vibrate and break. Suddenly, the “same” element isn’t treated equally in chemical reactions.
+At first glance, isotopes don’t seem like a big deal. Carbon is carbon, right? But here’s the twist: carbon can come as $^{12}C$ or $^{13}C$, nitrogen as $^{14}N$ or $^{15}N$, sulphur as $^{32}S$ or $^{34}S$. The only difference is the number of neutrons in the nucleus. That tiny difference changes the atom’s mass, and mass changes how bonds vibrate and break. Suddenly, the “same” element isn’t treated equally in chemical reactions.
 
 Life, being opportunistic, takes advantage of this. It tends to use the lighter isotopes because they’re easier to work with — the bonds snap more easily and the reactions run faster. Over time, this preference leaves behind a measurable imbalance in isotope ratios. That imbalance is what scientists call **metabolic fractionation**. And the reason it’s so exciting is that it’s not random: it’s a signature of life’s activity, written into the chemistry of the planet.
 ## From Atoms to Enzymes
@@ -25,7 +25,7 @@ Scientists capture this difference using δ‑notation. For example, organic mat
 
 When scientists talk about isotope ratios, they don’t just say “this sample has more $^{12}C$ than $^{13}C$.” Instead, they use **δ‑notation (delta notation)**, which is a way of expressing how different a sample is compared to a standard reference. The formula looks like this:
 
-<BlockMath math="\delta^{13}C = \left( \frac{(^{13}C/^{12}C)_{sample}}{(^{13}C/^{12}C)_{standard}} - 1 \right) \times 1000" />
+$\delta^{13}C = \left( \frac{(^{13}C/^{12}C)_{sample}}{(^{13}C/^{12}C)_{standard}} - 1 \right) \times 1000$
 
 The result is given in **per mil (‰)**, which just means “parts per thousand.” A negative δ${13}$C ≈ –25‰, that tells us it’s significantly lighter than the inorganic carbon it came from.
 
