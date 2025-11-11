@@ -23,6 +23,8 @@
   	--nova-box-text: #333333;
   	--nova-box-shadow: 0 0 12px rgba(0, 0, 0, 0.05);
 	--ripple-color: #999999;
+	--button-gradient: linear-gradient(135deg, #d7b196, #a7a7bf);
+	--hover-shadow: 0 0 15px rgba(191, 172, 169);
 }
 
 html[data-theme='dark'] {
@@ -50,6 +52,8 @@ html[data-theme='dark'] {
   --nova-box-shadow: 0 0 12px #4b0082;
   --ripple-color: #00ffff;
   --bg-2: #0a0a23;
+  --button-gradient: linear-gradient(135deg, #8a2be2, #00ffff);
+  --hover-shadow: 0 0 15px rgba(0, 255, 255, 0.6);
 }
 
 @font-face {

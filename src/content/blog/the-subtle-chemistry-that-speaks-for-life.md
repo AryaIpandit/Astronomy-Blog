@@ -25,7 +25,14 @@ Scientists capture this difference using δ‑notation. For example, organic mat
 
 When scientists talk about isotope ratios, they don’t just say “this sample has more $^{12}C$ than $^{13}C$.” Instead, they use **δ‑notation (delta notation)**, which is a way of expressing how different a sample is compared to a standard reference. The formula looks like this:
 
-$\delta^{13}C = \left( \frac{(^{13}C/^{12}C)_{sample}}{(^{13}C/^{12}C)_{standard}} - 1 \right) \times 1000$
+\[
+\delta^{13}\mathrm{C} =
+\left(
+  \frac{\left(\tfrac{^{13}\!C}{^{12}\!C}\right)_{\mathrm{sample}}}
+       {\left(\tfrac{^{13}\!C}{^{12}\!C}\right)_{\mathrm{standard}}}
+  - 1
+\right) \times 1000
+\]
 
 The result is given in **per mil (‰)**, which just means “parts per thousand.” A negative δ${13}$C ≈ –25‰, that tells us it’s significantly lighter than the inorganic carbon it came from.
 
