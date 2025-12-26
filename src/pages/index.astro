@@ -22,6 +22,7 @@ import RecentPosts from '../components/RecentPosts.astro';
   	});
   </script>
   <body>
+	<div id="comet-trail"></div>
 	<div id="nova-loader">
   		<div class="nova-core"></div>
   		<div class="nova-trail"></div>
@@ -128,6 +129,27 @@ import RecentPosts from '../components/RecentPosts.astro';
     		setInterval(loadQuote, 5000);
   		});
 	</script>
+	<script is:inline>
+		window.addEventListener("DOMContentLoaded", () => {
+			document.addEventListener("mousemove", (e) => {
+				const trail = document.getElementById("comet-trail");
+				if (!trail) return;
+
+				const particle = document.createElement("div");
+				particle.classList.add("comet-particle");
+
+				particle.style.left = e.clientX + "px";
+				particle.style.top = e.clientY + "px";
+
+				trail.appendChild(particle);
+
+				setTimeout(() => {
+					particle.remove();
+				}, 400);
+			});
+		});
+	</script>
+
   </body>
   <style>
   	@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700&display=swap');
@@ -365,6 +387,37 @@ import RecentPosts from '../components/RecentPosts.astro';
   		text-align: center;
   		display: block;
   		width: 100%;
+	}
+
+	#comet-trail {
+		position: fixed;
+		top: 0;
+		left: 0;
+		pointer-events: none;
+		z-index: 9999;
+	}
+
+	.comet-particle {
+		position: absolute;
+		width: 6px;
+		height: 6px;
+		background: var(--accent);
+		border-radius: 50%;
+		opacity: 0.9;
+		filter: blur(2px);
+		transform: translate(-50%, -50%);
+		animation: cometFade 0.4s linear forwards;
+	}
+
+	@keyframes cometFade {
+		0% {
+			opacity: 0.9;
+			transform: scale(1) translate(-50%, -50%);
+		}
+		100% {
+			opacity: 0;
+			transform: scale(0.3) translate(-50%, -50%);
+		}
 	}
 	</style>
 </html>
