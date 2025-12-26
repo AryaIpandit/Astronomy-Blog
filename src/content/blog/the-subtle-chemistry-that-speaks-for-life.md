@@ -25,14 +25,7 @@ Scientists capture this difference using δ‑notation. For example, organic mat
 
 When scientists talk about isotope ratios, they don’t just say “this sample has more $^{12}C$ than $^{13}C$.” Instead, they use **δ‑notation (delta notation)**, which is a way of expressing how different a sample is compared to a standard reference. The formula looks like this:
 
-\[
-\delta^{13}\mathrm{C} =
-\left(
-  \frac{\left(\tfrac{^{13}\!C}{^{12}\!C}\right)_{\mathrm{sample}}}
-       {\left(\tfrac{^{13}\!C}{^{12}\!C}\right)_{\mathrm{standard}}}
-  - 1
-\right) \times 1000
-\]
+<img src="/images/my-image-light.png" class="theme-img" alt="Theme image" style="display:block; margin:1.5rem auto; width:60%; max-width:500px;">
 
 The result is given in **per mil (‰)**, which just means “parts per thousand.” A negative δ${13}$C ≈ –25‰, that tells us it’s significantly lighter than the inorganic carbon it came from.
 
@@ -72,3 +65,13 @@ ___
 [Carbon Cycle Diagram by UCAR](https://scied.ucar.edu/image/carbon-cycle)
 [Nitrogen Cycle Diagram by USGS](https://www.usgs.gov/media/images/diagram-nitrogen-cycle)
 [Sulphur Cycle Diagram by Lumen](https://courses.lumenlearning.com/wm-biology2/chapter/the-sulfur-cycle/)
+
+<style>
+  .theme-img {
+    content: url("/BlogImages/Metabolic-Fractionation/light.png");
+  }
+
+  html[data-theme="dark"] .theme-img {
+    content: url("/BlogImages/Metabolic-Fractionation/dark.png");
+  }
+</style>
