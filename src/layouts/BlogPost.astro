@@ -128,6 +128,17 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
     				font-size: 1.6rem;
   				}
 			}
+			#progress-bar {
+				position: fixed;
+				top: 0;
+				left: 0;
+				height: 4px;
+				width: 0%;
+				background: var(--accent);
+				z-index: 9999;
+				transition: width 0.15s ease-out;
+				box-shadow: 0 0 8px var(--accent);
+			}
 		</style>
 	</head>
 
@@ -149,6 +160,7 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 		<Header />
 		<ThemeToggle />
 		<main>
+			<div id="progress-bar"></div>
 			<article>
 				<div class="hero-image">
 					{heroImage && <Image width={1020} height={510} src={heroImage} alt="" />}
@@ -190,6 +202,20 @@ const { title, description, pubDate, updatedDate, heroImage } = Astro.props;
 					window.MathJax.typesetPromise();
 				}
 			});
+		</script>
+		<script>
+			const bar = document.getElementById("progress-bar");
+
+			const updateProgress = () => {
+				const scrollTop = window.scrollY;
+				const docHeight = document.body.scrollHeight - window.innerHeight;
+				const progress = (scrollTop / docHeight) * 100;
+				bar.style.width = progress + "%";
+			};
+
+			window.addEventListener("scroll", updateProgress);
+			window.addEventListener("resize", updateProgress);
+			updateProgress();
 		</script>
 	</body>
 </html>
