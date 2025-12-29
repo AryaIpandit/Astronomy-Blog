@@ -9,8 +9,8 @@ import Footer from '../components/Footer.astro';
     <style>
       body {
         margin: 0;
-        background: radial-gradient(circle at center, #0a0a23, #000);
-        color: white;
+        background: var(--bg);
+        color: var(--text);
         font-family: system-ui, sans-serif;
         text-align: center;
         padding: 4em 1em;
@@ -27,14 +27,18 @@ import Footer from '../components/Footer.astro';
       }
 
       a {
-        color: #00ffff;
+        color: var(--nova-box-text);
         text-decoration: underline;
       }
     </style>
   </head>
   <body>
     <main>
-      <h1>🚫 404 – Page Not Found</h1>
+      <script>
+        const theme = localStorage.getItem('theme') || 'light';
+        document.documentElement.setAttribute('data-theme', theme);
+      </script>
+      <h1>404 – Page Not Found</h1>
       <p>Even Nova couldn’t locate that particle in the cosmos.</p>
       <img src="/NovaC.png" alt="Nova the Neutrino" class="nova-img" />
       <p>
