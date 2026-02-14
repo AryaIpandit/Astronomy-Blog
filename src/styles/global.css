@@ -225,3 +225,10 @@ article td {
 article th {
   color: var(--text);
 }
+
+.dark-only { display: none; }
+
+[data-theme='dark'] .light-only { display: none; }
+[data-theme='dark'] .dark-only { display: block; margin: auto; width: 60%; }
+
+.light-only { display: block; margin: auto; width: 60%; }

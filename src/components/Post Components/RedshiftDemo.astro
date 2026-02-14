@@ -1,0 +1,195 @@
+<style>
+  .redshift-demo {
+    max-width: 700px;
+    margin: 2rem auto;
+    padding: 1rem;
+    background: var(--section-bg);
+    border: 1px solid var(--border);
+    border-radius: 12px;
+    box-shadow: var(--shadow);
+    text-align: center;
+  }
+
+  #wave {
+    width: 100%;
+    height: 120px;
+  }
+
+  #wave-path {
+    stroke-width: 4;
+    fill: none;
+  }
+
+  .redshift-slider {
+    width: 100%;
+    margin: 1rem 0;
+  }
+
+  .redshift-values {
+    font-size: 1.1rem;
+    margin-top: 1rem;
+    color: var(--nova-box-text);
+  }
+</style>
+
+<div class="redshift-demo">
+  <h3>Stretch the Light!</h3>
+
+  <svg id="wave">
+    <path id="wave-path"></path>
+  </svg>
+
+  <input
+    type="range"
+    id="stretch-slider"
+    class="redshift-slider"
+    min="1"
+    max="1.75"
+    step="0.01"
+    value="1"
+  />
+
+  <div class="redshift-values">
+    Wavelength: <span id="wavelength">500</span> nm<br>
+    Redshift z: <span id="z-value">0</span>
+  </div>
+</div>
+
+<script is:client>
+  const slider = document.getElementById("stretch-slider");
+  const wavePath = document.getElementById("wave-path");
+  const wavelengthText = document.getElementById("wavelength");
+  const zText = document.getElementById("z-value");
+
+  const emitted = 400; // nm (starting violet/blue)
+  
+  // Define the min/max of your visible spectrum for the mapping
+  const minVisible = 400;
+  const maxVisible = 750;
+
+  function wavelengthToColor(lambda) {
+    let r, g, b;
+
+    // Violet: 380 - 436 (Fade Red down, keep Blue)
+    if (lambda >= 380 && lambda < 436) {
+      r = -(lambda - 436) / (436 - 380);
+      g = 0;
+      b = 1;
+    } 
+    // Blue: 436 - 495 (Keep Blue, fade Green up)
+    // Note: This range usually transitions from Blue to Cyan
+    else if (lambda >= 436 && lambda < 495) {
+      r = 0;
+      g = (lambda - 436) / (495 - 436);
+      b = 1;
+    } 
+    // Green: 495 - 566 (Keep Green, fade Blue down)
+    else if (lambda >= 495 && lambda < 566) {
+      r = 0;
+      g = 1;
+      b = -(lambda - 566) / (566 - 495);
+    } 
+    // Yellow: 566 - 589 (Keep Green, fade Red up)
+    else if (lambda >= 566 && lambda < 589) {
+      r = (lambda - 566) / (589 - 566);
+      g = 1;
+      b = 0;
+    } 
+    // Orange: 589 - 627 (Keep Red, fade Green down)
+    else if (lambda >= 589 && lambda < 627) {
+      r = 1;
+      g = -(lambda - 627) / (627 - 589);
+      b = 0;
+    } 
+    // Red: 627 - 780 (Pure Red)
+    else if (lambda >= 627 && lambda <= 780) {
+      r = 1;
+      g = 0;
+      b = 0;
+    } 
+    // Invisible (Infrared/UV)
+    else {
+      r = 0; g = 0; b = 0;
+    }
+
+    // Optional: Intensity Falloff
+    // This makes the very ends of the spectrum (UV/IR) darker, 
+    // which looks more realistic than abrupt black.
+    let factor = 1;
+    if (lambda > 700) {
+        factor = 0.3 + 0.7 * (780 - lambda) / (780 - 700);
+    } else if (lambda < 420) {
+        factor = 0.3 + 0.7 * (lambda - 380) / (420 - 380);
+    }
+
+    // Apply standard gamma correction (2.2) and bit-depth
+    function adjust(color, factor) {
+        const result = Math.round(255 * Math.pow(color * factor, 0.8));
+        return Math.max(0, Math.min(255, result));
+    }
+
+    const R = adjust(r, factor);
+    const G = adjust(g, factor);
+    const B = adjust(b, factor);
+
+    return `rgb(${R}, ${G}, ${B})`;
+  }
+
+  function drawWave(stretch) {
+    const width = 800; // Match your SVG width
+    const height = 60; // Center Y
+    const amplitude = 30; // Height of peaks
+    
+    // 1. Define Scale: How many pixels represent 400nm (Violet)?
+    //    A smaller number = tighter, higher energy wave.
+    //    60 pixels is a good visual balance for "Short Wavelength".
+    const basePixelWavelength = 60; 
+
+    // 2. Calculate current wavelength in pixels
+    //    If stretch is 1.0 (Violet), currentWavelength = 60px
+    //    If stretch is 1.8 (Red), currentWavelength = 108px
+    const currentWavelength = basePixelWavelength * stretch;
+
+    // 3. Mathematical Sine Wave Formula: y = A * sin( (2π * x) / λ )
+    const points = [];
+    for (let x = 0; x <= width; x += 2) { // Step by 2 for smoother lines
+      const y = height + amplitude * Math.sin((2 * Math.PI * x) / currentWavelength);
+      points.push(`${x},${y}`);
+    }
+
+    wavePath.setAttribute("d", "M" + points.join(" L"));
+  }
+
+  function update() {
+    const stretch = parseFloat(slider.value);
+    const observed = emitted * stretch;
+    const z = (observed - emitted) / emitted;
+
+    wavelengthText.textContent = observed.toFixed(0);
+    zText.textContent = z.toFixed(2);
+
+    // Update the stroke color using the new HSL function
+    wavePath.setAttribute("stroke", wavelengthToColor(observed));
+
+    drawWave(stretch);
+  }
+
+  let isUpdating = false;
+
+  function onInput() {
+    if (isUpdating) return;
+    
+    isUpdating = true;
+    requestAnimationFrame(() => {
+      update();
+      isUpdating = false;
+    });
+  }
+
+  // Use 'input' for live dragging, but routed through our throttle function
+  slider.addEventListener("input", onInput);
+  
+  // Initial call
+  update();
+  update();
+</script>

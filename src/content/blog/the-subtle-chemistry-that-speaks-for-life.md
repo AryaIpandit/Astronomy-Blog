@@ -1,6 +1,6 @@
 ---
 title: 'The Subtle Chemistry That Speaks for Life'
-description: 'Every atom carries a bias, a tiny tilt in the race of chemistry. Follow that tilt, and you uncover stories etched into rocks, oceans, and even alien skies — stories that reveal where life has been, and where it might be waiting.'
+description: 'Every cell makes a choice, a systematic leaning toward the lighter side of chemistry. Trace that preference through the isotopes of carbon and sulfur, and you find a hidden "atomic accent" left by enzymes—stories etched into ancient sediments that reveal not just that life existed, but exactly how it breathed and thrived.'
 pubDate: '18 Oct, 2025'
 image: '/BlogImages/Metabolic-Fractionation/mf.png'
 ---
@@ -25,7 +25,7 @@ Scientists capture this difference using δ‑notation. For example, organic mat
 
 When scientists talk about isotope ratios, they don’t just say “this sample has more $^{12}C$ than $^{13}C$.” Instead, they use **δ‑notation (delta notation)**, which is a way of expressing how different a sample is compared to a standard reference. The formula looks like this:
 
-<img src="/images/my-image-light.png" class="theme-img" alt="Theme image" style="display:block; margin:1.5rem auto; width:60%; max-width:500px;">
+<img src="/BlogImages/Metabolic-Fractionation/light.png" class="theme-img" alt="Theme image" style="display:block; margin:1.5rem auto; width:60%; max-width:500px;">
 
 The result is given in **per mil (‰)**, which just means “parts per thousand.” A negative δ${13}$C ≈ –25‰, that tells us it’s significantly lighter than the inorganic carbon it came from.
 
